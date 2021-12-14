@@ -95,7 +95,7 @@
     become: yes
   
   - name: ensure bgpd is running
-    service: name=bgpd =started
+    service: name=bgpdstate=started
     become: yes
 
   - name: Apply Persistent bgpd

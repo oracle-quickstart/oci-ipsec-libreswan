@@ -24,12 +24,11 @@
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 
-
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
 
-  <h3 align="center">IPSec Tunnel Customizations with Libreswan VPN</h3>
+  <h3 align="center">IPSec Site-to-Site Tunnel with OCI & Libreswan VPN</h3>
 
 </div>
 
@@ -82,7 +81,8 @@ Below are the versions of software that were used at the time this code was crea
 
 * [Libreswan](https://libreswan.org/), = version 4.5
 * [Quagga](https://www.quagga.net/), = version 1.2.0
-* [Terraform](https://www.terraform.io/), version = v45.6
+* [Terraform](https://www.terraform.io/), version = 1.0.11
+* [OCI Terraform Provider](https://registry.terraform.io/providers/hashicorp/oci/latest), version 4.56.0
 * [Ansible](https://www.ansible.com/), version = core 2.12
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -188,8 +188,7 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 [stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
 [stars-url]: https://github.com/oracle-quickstart/oci-ipsec-libreswan/stargazers
 [issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/oracle-quickstart/oci-ipsec-libreswan/issues
+[issues-url]: (https://img.shields.io/github/issues/oracle-quickstart/oci-ipsec-libreswan?logo=Github)
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/troy-levin-6bb9a94/
 [product-screenshot]: images/screenshot.png
-
