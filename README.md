@@ -156,12 +156,12 @@ Don't forget to give the project a star! Thanks again!
 
 1. IPSEC Tunnel renaming Error
 
-The following error is a know issue.  Re-apply Terraform and the issue will resolve on its own as a workaround
+The following error is a know issue and will occur on first Terraform apply.  Re-apply Terraform and the issue will resolve on its own as a workaround
 
 ```Error: 409-IncorrectState 
 │ Provider version: 4.56.0, released on 2021-12-08.  
 │ Service: Core Ip Sec Connection Tunnel Management 
-│ Error Message: Resource ocid1.ipsecconnection.oc1.iad.aaaaaaaa27zc7qypdgg47yl3qt7tltnx4no57k2ypxpm63vmcrmamthcciza is in an invalid state Provisioning 
+│ Error Message: Resource ocid1.iterrpsecconnection.oc1.iad.aaaaaaaa27zc7qypdgg47yl3qt7tltnx4no57k2ypxpm63vmcrmamthcciza is in an invalid state Provisioning 
 │ OPC request ID: 1e68bf5cb7e3cabcd2b581e272a3786d/EDCB425B3A799CD3DAB519A133EE0443/D85A86FA9B06CF360219D4CA8F309170 
 │ Suggestion: The resource is in a conflicted state. Please retry again or contact support for help with service: Core Ip Sec Connection Tunnel Management
 │ 
@@ -170,6 +170,7 @@ The following error is a know issue.  Re-apply Terraform and the issue will reso
 │   on networking.tf line 305, in resource "oci_core_ipsec_connection_tunnel_management" "oci-ipsec-connection-tunnel-management-b":
 │  305: resource "oci_core_ipsec_connection_tunnel_management" "oci-ipsec-connection-tunnel-management-b" {
   ```
+2. *tf-ansible-extra-vars.yml* is dynamically generated.  The file exits in the repo as an example but should be removed prior to first Terraform run or there can exist a race condition.
 
 <!-- CONTACT -->
 ## Contact

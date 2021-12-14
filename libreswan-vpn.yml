@@ -17,10 +17,11 @@
     yum:
       name: quagga
       state: installed
+    become_user: root     
 
   - name: write the vpn config file
     template: src=libreswan.j2 dest=/etc/ipsec.d/oci-vpn-tunnels.conf
-    become: true
+    become: yes
 
   - name: write the vpn secrets file
     template: src=libreswan_secrets.j2 dest=/etc/ipsec.d/oci-vpn-secrets.secrets
@@ -28,7 +29,7 @@
 
   - name: Apply Permissions for quagga
     shell: chmod -R 777 /etc/quagga
-    become: true
+    become_user: root
 
   - name: Enable Ibr_netfilter IPv4
     copy:
@@ -80,28 +81,26 @@
 
   - name: write the guagga file
     template: src=zebra.conf.j2 dest=/etc/quagga/zebra.conf
-    become: true
+    become_user: root
 
   - name: write the bgpd file
     template: src=bgpd.conf.j2 dest=/etc/quagga/bgpd.conf
-    become: true
+    become_user: root
 
-  - name: ensure zebra is running
-    service: name=zebra state=started
-    become: yes
+  - name: start and enable zebra service
+    service:
+      name: zebra
+      enabled: yes
+      state: started
+    become_user: root
 
-  - name: Apply Persistent zebra
-    shell: bgpd start
-    become: yes
-  
-  - name: ensure bgpd is running
-    service: name=bgpdstate=started
-    become: yes
-
-  - name: Apply Persistent bgpd
-    shell: systemctl enable bgpd.service
-    become: yes
-
+  - name: start and enable bgpd service
+    service:
+      name: bgpd
+      enabled: yes
+      state: started
+    become_user: root
+    
   - name: Restart IPSEC
     shell: ipsec restart
     become: yes

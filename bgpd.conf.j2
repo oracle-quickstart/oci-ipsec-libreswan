@@ -1,13 +1,13 @@
-hostname onprem-libreswan-vcn-subnet-vnic
+hostname bgp
 router bgp 1234
  bgp router-id 192.168.100.101
   network {{ cpe_vcn_cidr }}
   neighbor 192.168.100.102 remote-as 31898
   neighbor 192.168.100.102 ebgp-multihop 255
   neighbor 192.168.100.102 next-hop-self
-  neighbor 192.168.100.202 remote-as 31898
-  neighbor 192.168.100.202 ebgp-multihop 255
-  neighbor 192.168.100.202 next-hop-self
+  neighbor 192.168.200.202 remote-as 31898
+  neighbor 192.168.200.202 ebgp-multihop 255
+  neighbor 192.168.200.202 next-hop-self
 
 log file bgpd.log
 log stdout
