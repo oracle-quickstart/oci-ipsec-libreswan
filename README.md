@@ -23,6 +23,7 @@
 ![GitHubForks][forks-shield]
 ![GitHubIssues][issues-shield]
 ![GitHubRepoStars][stars-shield]
+![GitHubDownloads][downloads-shield]
 
 <!-- PROJECT LOGO -->
 <br />
@@ -185,10 +186,7 @@ Project Link: [https://github.com/oracle-quickstart/oci-ipsec-libreswan](https:/
 [issues-shield]: https://img.shields.io/github/issues/oracle-quickstart/oci-ipsec-libreswan?logo=GitHub
 [forks-shield]: https://img.shields.io/github/forks/oracle-quickstart/oci-ipsec-libreswan?logo=Github
 [stars-shield]: https://img.shields.io/github/stars/oracle-quickstart/oci-ipsec-libreswan?logo=GitHub
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/troy-levin-6bb9a94/
 [product-screenshot]: images/screenshot.png
-
-
-<!-- [contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors -->
+[downloads-shield]: https://img.shields.io/github/downloads/oracle-quickstart/oci-ipsec-libreswan/total?logo=Github 
