@@ -91,7 +91,7 @@
     become: yes
 
   - name: Apply Persistent zebra
-    shell: systemctl enable zebra.service
+    shell: bgpd start
     become: yes
   
   - name: ensure bgpd is running

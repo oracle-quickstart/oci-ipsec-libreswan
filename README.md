@@ -17,7 +17,7 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-[![Contributors][contributors-shield]][contributors-url]
+<!-- [![Contributors][contributors-shield]][contributors-url] -->
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
@@ -53,6 +53,7 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
+    <li><a href="#Known Issues">Contact</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
@@ -125,7 +126,13 @@ This setup leverages two Oracle Cloud Infrastructure VCNs within the same tenanc
   git clone git@github.com:oracle-quickstart/oci-ipsec-libreswan.git
   ```
 4. Update the *variables.tf* or terraform.tfvars file tom match your enviornment
-5. Update the libreswan.j2 file with the tunnel IP addresses
+5. Update the *libreswan.j2* file with the tunnel IP addresses
+6. Run Terraform
+  ```sh
+  terraform init
+  terraform plan
+  terraform apply
+  ```
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -143,6 +150,25 @@ Don't forget to give the project a star! Thanks again!
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+<!-- CONTACT -->
+## Known Issues
+
+1. IPSEC Tunnel renaming Error
+
+The following error is a know issue.  Re-apply Terraform and the issue will resolve on its own as a workaround
+
+```Error: 409-IncorrectState 
+│ Provider version: 4.56.0, released on 2021-12-08.  
+│ Service: Core Ip Sec Connection Tunnel Management 
+│ Error Message: Resource ocid1.ipsecconnection.oc1.iad.aaaaaaaa27zc7qypdgg47yl3qt7tltnx4no57k2ypxpm63vmcrmamthcciza is in an invalid state Provisioning 
+│ OPC request ID: 1e68bf5cb7e3cabcd2b581e272a3786d/EDCB425B3A799CD3DAB519A133EE0443/D85A86FA9B06CF360219D4CA8F309170 
+│ Suggestion: The resource is in a conflicted state. Please retry again or contact support for help with service: Core Ip Sec Connection Tunnel Management
+│ 
+│ 
+│   with oci_core_ipsec_connection_tunnel_management.oci-ipsec-connection-tunnel-management-b,
+│   on networking.tf line 305, in resource "oci_core_ipsec_connection_tunnel_management" "oci-ipsec-connection-tunnel-management-b":
+│  305: resource "oci_core_ipsec_connection_tunnel_management" "oci-ipsec-connection-tunnel-management-b" {
+  ```
 
 <!-- CONTACT -->
 ## Contact
@@ -155,14 +181,14 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
+<!-- [contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
+[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors -->
 [forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
+[forks-url]: https://github.com/oracle-quickstart/oci-ipsec-libreswan/network/members
 [stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
+[stars-url]: https://github.com/oracle-quickstart/oci-ipsec-libreswan/stargazers
 [issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
+[issues-url]: https://github.com/oracle-quickstart/oci-ipsec-libreswan/issues
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/troy-levin-6bb9a94/
 [product-screenshot]: images/screenshot.png
