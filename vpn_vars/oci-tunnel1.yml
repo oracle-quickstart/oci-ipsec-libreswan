@@ -1,0 +1,13 @@
+---
+#Name for the VPN Connetion
+conn_name_tunnel1: oci-tunnel1
+
+#Connection settings
+left: "{{ cpe_local_ip }}"
+right: "{{ oci_headend1 }}"
+vti1: "vti1"
+oci_vcn_cidr: "{{ oci_vcn_cidr }}"
+
+#PSK to be used. 
+vpn_psk: "{{ shared_secret_psk }}"
+
