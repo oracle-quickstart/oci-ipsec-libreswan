@@ -18,11 +18,11 @@
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
 <!-- [![Contributors][contributors-shield]][contributors-url] -->
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
 
+[![LinkedIn][linkedin-shield]][linkedin-url]
+![GitHubForks][forks-shield]
+![GitHubIssues][issues-shield]
+![GitHubRepoStars][stars-shield]
 
 <!-- PROJECT LOGO -->
 <br />
@@ -175,20 +175,20 @@ The following error is a know issue.  Re-apply Terraform and the issue will reso
 
 Your Name - Troy Levin - troy.levin@oracle.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [https://github.com/oracle-quickstart/oci-ipsec-libreswan](https://github.com/oracle-quickstart/oci-ipsec-libreswan)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-<!-- [contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors -->
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/oracle-quickstart/oci-ipsec-libreswan/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/oracle-quickstart/oci-ipsec-libreswan/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: (https://img.shields.io/github/issues/oracle-quickstart/oci-ipsec-libreswan?logo=Github)
+
+[issues-shield]: https://img.shields.io/github/issues/oracle-quickstart/oci-ipsec-libreswan?logo=GitHub
+[forks-shield]: https://img.shields.io/github/forks/oracle-quickstart/oci-ipsec-libreswan?logo=Github
+[stars-shield]: https://img.shields.io/github/stars/oracle-quickstart/oci-ipsec-libreswan?logo=GitHub
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/troy-levin-6bb9a94/
 [product-screenshot]: images/screenshot.png
+
+
+<!-- [contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
+[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors -->
