@@ -77,10 +77,10 @@ The objective of this project is as follows: Programmatically spin up an environ
 
 #### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+Below are the versions of software that were used at the time this code was created.
 
-* [Libreswan](https://libreswan.org/)
-* [Quagga](https://www.quagga.net/) = 
+* [Libreswan](https://libreswan.org/), = version 4.5
+* [Quagga](https://www.quagga.net/), = version 1.2.0
 * [Terraform](https://www.terraform.io/), version = v45.6
 * [Ansible](https://www.ansible.com/), version = core 2.12
 
