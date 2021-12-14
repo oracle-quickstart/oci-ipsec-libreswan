@@ -122,7 +122,7 @@ This setup leverages two Oracle Cloud Infrastructure VCNs within the same tenanc
 3. Access to Oracle CLoud Infastructure
 3. Download or clone the repo to your local machine
   ```sh
-  npm install npm@latest -g
+  git clone git@github.com:oracle-quickstart/oci-ipsec-libreswan.git
   ```
 4. Update the *variables.tf* or terraform.tfvars file tom match your enviornment
 5. Update the libreswan.j2 file with the tunnel IP addresses
