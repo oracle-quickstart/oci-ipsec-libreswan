@@ -80,10 +80,10 @@ The objective of this project is as follows: Programmatically spin up an environ
 
 Below are the versions of software that were used at the time this code was created.
 
-* [Libreswan](https://libreswan.org/), = version 4.5
-* [Quagga](https://www.quagga.net/), = version 1.2.0
+* [Libreswan](https://libreswan.org/), version = 4.5
+* [Quagga](https://www.quagga.net/), version = 1.2.0
 * [Terraform](https://www.terraform.io/), version = 1.0.11
-* [OCI Terraform Provider](https://registry.terraform.io/providers/hashicorp/oci/latest), version 4.56.0
+* [OCI Terraform Provider](https://registry.terraform.io/providers/hashicorp/oci/latest), version = 4.56.0
 * [Ansible](https://www.ansible.com/), version = core 2.12
 
 <p align="right">(<a href="#top">back to top</a>)</p>
