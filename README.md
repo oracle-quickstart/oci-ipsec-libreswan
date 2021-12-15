@@ -76,7 +76,7 @@ Enabling IPSec Customizations for Site-to-Site VPN tunnels provides the followin
 The objective of this project is as follows: Programmatically spin up an environment for quick functional testing of IPSec Customizations leveraging Terraform and Ansible.
 
 
-#### Built With
+#### Built With:
 
 Below are the versions of software that were used at the time this code was created.
 
