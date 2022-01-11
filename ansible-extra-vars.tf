@@ -8,8 +8,8 @@ resource "local_file" "tf-ansible-extra-vars" {
     cpe_public_ip: ${oci_core_instance.onprem-vcn-libreswan-instance.public_ip}
     oci_headend1: ${data.oci_core_ipsec_connection_tunnels.oci-ipsec-connection-tunnels.ip_sec_connection_tunnels[0].vpn_ip}
     oci_headend2: ${data.oci_core_ipsec_connection_tunnels.oci-ipsec-connection-tunnels.ip_sec_connection_tunnels[1].vpn_ip}
-    cpe_vcn_cidr: ${oci_core_subnet.onprem-vcn-subnet.cidr_block}
-    oci_vcn_cidr: ${oci_core_subnet.oci-vcn-subnet.cidr_block}
+    cpe_vcn_cidr: ${var.onprem_cidr_block}
+    oci_vcn_cidr: ${var.oci_vcn_cidr_block}
     shared_secret_psk: ${var.shared_secret_psk}
     DOC
   filename = "./tf-ansible-extra-vars.yml"

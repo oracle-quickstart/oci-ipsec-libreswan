@@ -1,0 +1,13 @@
+hostname bgp
+router bgp {{ bgp_as }}
+ bgp router-id {{ router_id }}
+  network {{ cpe_vcn_cidr }}
+  neighbor {{ neighbor_1 }} remote-as 31898
+  neighbor {{ neighbor_1 }} ebgp-multihop 255
+  neighbor {{ neighbor_1 }} next-hop-self
+  neighbor {{ neighbor_2 }} remote-as 31898
+  neighbor {{ neighbor_2 }} ebgp-multihop 255
+  neighbor {{ neighbor_2 }} next-hop-self
+
+log file bgpd.log
+log stdout

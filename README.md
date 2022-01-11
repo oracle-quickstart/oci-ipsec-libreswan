@@ -82,9 +82,9 @@ Below are the versions of software that were used at the time this code was crea
 
 * [Libreswan](https://libreswan.org/), version = 4.5
 * [Quagga](https://www.quagga.net/), version = 1.2.0
-* [Terraform](https://www.terraform.io/), version = 1.0.11
-* [OCI Terraform Provider](https://registry.terraform.io/providers/hashicorp/oci/latest), version = 4.56.0
-* [Ansible](https://www.ansible.com/), version = core 2.12
+* [Terraform](https://www.terraform.io/), version = 1.1.3
+* [OCI Terraform Provider](https://registry.terraform.io/providers/hashicorp/oci/latest), version = 4.58.0
+* [Ansible](https://www.ansible.com/), version = core 2.12.1
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -111,7 +111,8 @@ This setup leverages two Oracle Cloud Infrastructure VCNs within the same tenanc
 * Internet Gateway (IGW)
 * A Libreswan compute instance acting as the CPE device in this scenario
 
-![Screenshot](architecture.png)
+##Architecture Diagram
+![Screenshot](./images/architecture.png)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -170,12 +171,11 @@ The following error is a know issue and will occur on first Terraform apply.  Re
 │   on networking.tf line 305, in resource "oci_core_ipsec_connection_tunnel_management" "oci-ipsec-connection-tunnel-management-b":
 │  305: resource "oci_core_ipsec_connection_tunnel_management" "oci-ipsec-connection-tunnel-management-b" {
   ```
-2. *tf-ansible-extra-vars.yml* is dynamically generated.  The file exits in the repo as an example but should be removed prior to first Terraform run or there can exist a race condition.
 
 <!-- CONTACT -->
 ## Contact
 
-Your Name - Troy Levin - troy.levin@oracle.com
+Troy Levin - feedback_oci_virtual_networking_us_grp@oracle.com
 
 Project Link: [https://github.com/oracle-quickstart/oci-ipsec-libreswan](https://github.com/oracle-quickstart/oci-ipsec-libreswan)
 

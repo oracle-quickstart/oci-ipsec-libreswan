@@ -4,7 +4,8 @@
   vars_files:
     - ./vpn_vars/oci-tunnel1.yml
     - ./vpn_vars/oci-tunnel2.yml
-    - ./tf-ansible-extra-vars.yml
+    - ./bgp_vars/bgpd.yml
+    - ../tf-ansible-extra-vars.yml
 
   tasks:
 

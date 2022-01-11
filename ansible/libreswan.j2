@@ -10,12 +10,12 @@ conn {{ conn_name_tunnel1 }}
      leftsubnet=0.0.0.0/0
      leftnexthop=%defaultroute
      right={{ oci_headend1 }}
-     rightid=1{{ oci_headend1 }}    
+     rightid={{ oci_headend1 }}    
      rightsubnet=0.0.0.0/0
      mark=5/0xffffffff # Needs to be unique across all tunnels
      vti-interface=vti1
      vti-routing=no
-     leftvti=192.168.100.101
+     leftvti={{ tunnel1_leftvti }}
      ikev2=no # To use IKEv2, change to ikev2=insist
      ike=aes_cbc256-sha2_384;modp1536
      phase2alg=aes_gcm256;modp1536
@@ -31,12 +31,12 @@ conn {{ conn_name_tunnel2 }}
      leftsubnet=0.0.0.0/0
      leftnexthop=%defaultroute
      right={{ oci_headend2 }}
-     rightid=1{{ oci_headend2 }}    
+     rightid={{ oci_headend2 }}    
      rightsubnet=0.0.0.0/0
      mark=6/0xffffffff # Needs to be unique across all tunnels
      vti-interface=vti2
      vti-routing=no
-     leftvti=192.168.200.201
+     leftvti={{ tunnel2_leftvti }}
      ikev2=no # To use IKEv2, change to ikev2=insist
      ike=aes_cbc256-sha2_384;modp1536
      phase2alg=aes_gcm256;modp1536

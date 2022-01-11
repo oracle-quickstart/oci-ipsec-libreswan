@@ -26,13 +26,37 @@ variable "default_oci_vcn_route_table" {
 variable "user" {
     type = string
 }
-variable "oci_cidr" {
+variable "oci_subnet_cidr" {
     type = string
-    default = "10.16.1.0/24"
+    default = "192.168.100.0/25"
 }
-variable "onprem_cidr" {
+variable "onprem_subnet_cidr" {
     type = string
-    default = "172.16.1.0/24"
+    default = "172.16.100.0/25"
+}
+variable "oci_vcn_cidr_block" {
+    type = string
+    default = "192.168.100.0/24"
+}
+variable "onprem_cidr_block" {
+    type = string
+    default = "172.16.100.0/24"
+}
+variable "bgp_cust_tunnela_ip" {
+    type = string
+    default = "10.10.100.101/30"
+}
+variable "bgp_oci_tunnela_ip" {
+    type = string
+    default = "10.10.100.102/30"
+}
+variable "bgp_cust_tunnelb_ip" {
+    type = string
+    default = "10.10.200.201/30"
+}
+variable "bgp_oci_tunnelb_ip" {
+    type = string
+    default = "10.10.200.202/30"
 }
 variable "shared_secret_psk" {
     type = string

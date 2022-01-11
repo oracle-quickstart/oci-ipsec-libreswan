@@ -4,7 +4,9 @@
 # .tfstate files
 *.tfstate
 *.tfstate.*
-*.terraform.lock.hcl
+
+# Local .terraform lock files
+*.lock.*
 
 # Crash log files
 crash.log
@@ -34,4 +36,12 @@ override.tf.json
 .terraformrc
 terraform.rc
 
+# Ignore Auto Generated Vars files for Ansible
 tf-ansible-extra-vars.yml 
+
+# General
+**scratch**
+.DS_Store
+.AppleDouble
+.LSOverride
+.python-version
