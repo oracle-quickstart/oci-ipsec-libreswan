@@ -10,6 +10,10 @@ variable "user_ocid" {
 variable "fingerprint" {
     type = string
 }
+# Terraform 
+variable "pem_private_key_path" {
+    type = string
+}
 variable "private_key_path" {
     type = string
 }
